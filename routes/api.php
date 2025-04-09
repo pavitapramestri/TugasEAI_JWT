@@ -26,5 +26,5 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
     Route::post('logout', [AuthController::class, 'logout']);
     Route::post('refresh', [AuthController::class, 'refresh']);
     Route::post('me', [AuthController::class, 'me']);
-    Route::resource('student', StudentController::class);
+    Route::resource('student', StudentController::class); //routing bundle untuk get,post,dll
 });
